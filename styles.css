@@ -1,0 +1,167 @@
+@font-face{
+	src:url(Proxima Nova/Proxima Nova Bold.otf);
+	font-family: 'Proxima Nova';
+	font-weight: 700;
+}
+@font-face{
+	src:url(Proxima Nova/Proxima Nova Light.otf);
+	font-family: 'Proxima Nova';
+	font-weight: 300;
+}
+@font-face{
+	src:url(Proxima Nova/Proxima Nova Regular.otf);
+	font-family: 'Proxima Nova';
+	font-weight: 400;
+}
+.container{
+	background-image: url(images/background.jpg);
+	height: 900px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: relative;
+	max-width: 1800px;
+	font-family: 'Proxima Nova' , sans-serif;
+	color: #ffffff;
+}
+.logo{
+	display:flex;
+	padding: 54px 0 0 0;
+	justify-content: center;
+}
+.logoiImg{
+	width: 69px;
+    height: 54px;
+}
+.title{
+	font-size: 28px;
+	text-transform: uppercase;
+	margin: 0;
+}
+.text{
+	margin: 0 0 0 30px;
+}
+.JCB{
+	font-size: 16px;
+}
+.main{
+	max-width: 1148px;
+	margin: 120px auto auto;
+	background-color: #ffffff;
+    /*height: 473px;    временно для удобства*/
+}
+.input{
+	font-size: 16px;
+	line-height: 1.98;
+	color: #1e1f26;
+	border: none;
+	outline: none;
+	width: 952px;
+    margin: 58px auto 0px 98px;
+    display: inline;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.24);
+}
+.svg{
+	margin: 0px 0px -12px -29px;
+}
+.label{
+	font-size: 14px;
+	line-height: 2.26;
+	color: #1e1f26;
+	display: flex;
+}
+.date{
+	margin: 55px 0 0 99px;
+	display: flex;
+}
+.check{
+	display: block;
+}
+
+.buttonText{
+	font-size: 18px;
+	line-height: 1.76;
+	color: #db0536;
+	border-bottom: 3px solid #35363c;
+	outline: none;
+	padding: 19px 150px 16px 15px;
+	font-weight: 600;
+}
+.button{
+	background-color: rgba(0, 0, 0, 0.24);
+}
+
+.eviction{
+	margin: 0 0 0 9px;
+}
+.arrow{
+	margin: 0 0 0 9px;
+}
+
+.buttonText1::after{
+	content: '\2304';
+	height: 9px;
+	width: 14px;
+	display: inline-block;
+	color: #35363c;
+}
+.checkbox{
+	width: 23px;
+    height: 23px;
+    border: solid 1px #35363c;
+    background-color: rgba(0, 0, 0, 0.24);
+}
+.svgFly{
+	width: 19px;
+    height: 18px;
+}
+.flight{
+	font-size: 16px;
+	line-height: 1.76;
+	color: #35363c;
+	font-weight: 400;
+}
+.fly{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 47px 0 0 0;
+}
+.buttonSearch{
+	font-size: 18px;
+	line-height: 1.76;
+	text-align: center;
+	color: #ffffff;
+	border-radius: 30.5px;
+    background-color: #db0536;
+    padding: 23px 72px 26px 72px;
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    margin: 39px auto;
+}
+
+.buttonSearch:hover{
+	cursor: pointer;
+	background: #ac0027;
+	transition: 2s;
+}
+
+.total{
+	display: flex;
+	justify-content: center;
+	font-size: 14px;
+	line-height: 2.26;
+	color: #1e1f26;
+	font-weight: 400;
+}
+.night{
+	margin: 0 4px 0 17px;
+}
+
+.adults{
+	margin: 0 3px 0 11px;
+}
+
+.children{
+	margin: 0 2px 0 16px;
+}

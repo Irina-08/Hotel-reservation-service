@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="normalize.css">
+	<!-- подключить шрифт из комментария к ДЗ -->
+	<!--<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600&display=swap" rel="stylesheet">-->
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="container">
+		<header> 
+			<div class="logo">
+				<img class="logoiImg" src="images/logo.jpg" srcset="images/logo@2x.jpg 2x">
+				<div class="text">
+					<h1 class="title">гостиницы по лучшим ценам</h1>
+					<h2 class="JCB">JCB — лучший интернет-сервис по версии National Geographic Traveler Awards</h2>  
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<input type="text" placeholder="Направление, город, название отеля: например Париж, Милан" class="input">
+			<svg class="svg" xmlns="http://www.w3.org/2000/svg" width="26.683" height="26.683">
+				<path fill="none" fill-rule="evenodd" stroke="#DB0536" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12.182 12.286l4.358 4.262m-8.381-2.95c3.148 0 5.699-2.495 5.699-5.573 0-3.078-2.551-5.573-5.699-5.573-3.148 0-5.699 2.495-5.699 5.573 0 3.078 2.551 5.573 5.699 5.573z"/>
+			</svg>
+			<div class="date">
+				<div class="check">
+					<label class="label">Выберите дату вселения</label>
+					<button class="buttonText"><span >23 января, 2017</span></button>
+				</div>
+				<div class="eviction">
+					<label class="label">Выберите дату отъезда</label>
+					<button class="buttonText"><span >24 января, 2017</span></button>
+				</div>
+				<div class="arrow">
+					<label class="label">Взрослых</label>
+					<button class="buttonText buttonText1"><span >2</span></button>
+				</div>
+				<div class="arrow">
+					<label class="label">Детей</label>
+					<button class="buttonText buttonText1"><span >1</span></button>
+				</div>
+			</div>
+			<div class="fly">
+				<input class="checkbox" type="checkbox" name="">
+            	<!--<svg xmlns="http://www.w3.org/2000/svg" width="14.665" height="14.665">
+                <path fill="#DB0536" fill-rule="evenodd" d="M0 0h11v11H0V0z"/>
+            </svg> -->
+            <svg class="svgFly" xmlns="http://www.w3.org/2000/svg" width=".67cm" height="24">
+            	<path fill="#A5A7B5" fill-rule="evenodd" d="M14.389 17.546l1.414-1.414-2.121-9.193 3.889-3.889a1.497 1.497 0 0 0 0-2.121 1.497 1.497 0 0 0-2.121 0l-3.889 3.889-9.193-2.121L.954 4.111 8.379 8 4.49 11.889l-2.475-.354-1.061 1.061 3.182 1.768 1.768 3.182 1.06-1.061-.353-2.475 3.889-3.889 3.889 7.425z"/>
+            </svg>
+            <span class="flight">Добавить перелет и получить скидку</span>
+        </div>
+        <button class="buttonSearch">Начать поиск</button>
+        <div class="total">
+        	<div>23—25 января</div>
+        	<div class="night">3</div>
+        	<svg xmlns="http://www.w3.org/2000/svg" width="17.348" height="17.348">
+        		<path fill="#1E1F26" fill-rule="evenodd" d="M10.201 9.601A6.801 6.801 0 0 1 4.004 0a6.801 6.801 0 0 0 2.797 13.002 6.798 6.798 0 0 0 6.197-4.004c-.853.386-1.8.603-2.797.603z"/>
+        	</svg>
+        	<div class="adults">2</div>
+        	<svg xmlns="http://www.w3.org/2000/svg" width="9.335" height="24">
+        		<path fill="#1E1F26" fill-rule="evenodd" d="M6.489 4.692c-.34-.302-.814-.453-1.419-.453H1.968c-.581 0-1.054.137-1.419.411C.183 4.925 0 5.35 0 5.926v4.656c0 .247.101.425.302.535.202.11.398.11.587 0 .189-.11.284-.288.284-.535V6.338h.378v10.797c0 .577.259.865.776.865s.776-.288.776-.865v-5.323h.794v5.323c0 .577.259.865.776.865s.775-.288.775-.865V6.338h.379v3.956c0 .302.094.521.284.658.189.137.384.137.586 0 .202-.137.303-.356.303-.658V5.967c0-.548-.171-.973-.511-1.275zM3.462 3.498c.441 0 .82-.171 1.135-.514a1.79 1.79 0 0 0 .473-1.255c0-.467-.158-.872-.473-1.215C4.282.171 3.903 0 3.462 0c-.441 0-.82.171-1.135.514a1.763 1.763 0 0 0-.473 1.235c0 .48.158.892.473 1.235.315.343.694.514 1.135.514z"/>
+        	</svg>
+        	<div class="children">1</div>
+        	<svg xmlns="http://www.w3.org/2000/svg" width="8.013" height="15.987">
+        		<path fill="#1E1F26" fill-rule="evenodd" d="M2.987 2.825c.811 0 1.47-.634 1.47-1.414 0-.779-.659-1.413-1.47-1.413-.809 0-1.469.634-1.469 1.413 0 .78.66 1.414 1.469 1.414zM5.98 7.044L4.79 3.495a.533.533 0 0 0-.484-.339H1.668a.533.533 0 0 0-.483.339l-1.19 3.549a.313.313 0 0 0 .04.292c.061.08.162.126.277.126h.305c.207 0 .42-.148.484-.338l.338-1.011v5.236c0 .36.305.652.678.652h.048a.666.666 0 0 0 .678-.652V7.935h.289v3.414c0 .36.304.652.678.652h.047a.666.666 0 0 0 .678-.652V6.112l.34 1.012a.53.53 0 0 0 .483.338h.305a.342.342 0 0 0 .277-.126.31.31 0 0 0 .04-.292z"/>
+        	</svg>
+        </div>
+    </main>
+</div>
+</body>
+</html>
