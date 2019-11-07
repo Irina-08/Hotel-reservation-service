@@ -9,93 +9,144 @@
 	font-family: 'Proxima Nova';
 	font-weight: 300;
 }
+
 @font-face{
 	src:url(Proxima Nova/Proxima Nova Regular.otf);
 	font-family: 'Proxima Nova';
 	font-weight: 400;
 }
+
 .container{
 	background-image: url(images/background.jpg);
+	background-color: rgba(0,0,0,.7);
 	height: 900px;
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: cover;
 	position: relative;
 	max-width: 1800px;
 	font-family: 'Proxima Nova' , sans-serif;
 	color: #ffffff;
+	margin: 0 auto;
+	z-index: 1;
 }
+
+.container::before{
+	content: '';
+	background: #35363c;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	opacity: 0.5;
+	z-index: 2;
+}
+
 .logo{
-	display:flex;
-	padding: 54px 0 0 0;
-	justify-content: center;
+	display: flex;
+    padding: 54px 0 0 0;
+    justify-content: center;
+    z-index: 3;
+    position: relative;
+    margin: 0px 0 0 0px;
+    margin-left: -34.9%;
 }
+
 .logoiImg{
 	width: 69px;
     height: 54px;
+    margin-left: 0%;
+    margin: 0px 0px 0 0px;
+    padding: 0 0px 0 0px;
 }
+
 .title{
-	font-size: 28px;
-	text-transform: uppercase;
-	margin: 0;
+	font-size: 27px;
+    text-transform: uppercase;
+    margin: -3px 0px 0 0px;
+    letter-spacing: 0.4px;
 }
+
 .text{
-	margin: 0 0 0 30px;
+	margin: 0px 0 0 29px;
 }
+
 .JCB{
 	font-size: 16px;
+    margin: 6px 0 0 0px;
+    letter-spacing: 0px;
+    font-weight: 400;
+    padding: 0 0 0 0;
 }
+
 .main{
 	max-width: 1148px;
-	margin: 120px auto auto;
+	margin: 115px auto auto;
 	background-color: #ffffff;
-    /*height: 473px;    временно для удобства*/
+	z-index: 4;
+	position: relative;
+	border-radius: 5px;
 }
+
 .input{
 	font-size: 16px;
 	line-height: 1.98;
 	color: #1e1f26;
 	border: none;
 	outline: none;
-	width: 952px;
-    margin: 58px auto 0px 98px;
+	width: 940px;
+    margin: 59px auto 0px 97px;
     display: inline;
     border-bottom: 1px solid rgba(0, 0, 0, 0.24);
+    padding: 0 0 0 12px;
 }
+
 .svg{
-	margin: 0px 0px -12px -29px;
+	margin: 0px 0px -13px -27px;
+	cursor: pointer;
 }
+
 .label{
 	font-size: 14px;
 	line-height: 2.26;
 	color: #1e1f26;
 	display: flex;
 }
-.date{
-	margin: 55px 0 0 99px;
+.label1{
+	font-size: 14px;
+	line-height: 2.26;
+	color: #1e1f26;
 	display: flex;
 }
+
+.date{
+	margin: 46px 0 0 97px;
+	display: flex;
+}
+
 .check{
 	display: block;
 }
 
-.buttonText{
-	font-size: 18px;
-	line-height: 1.76;
-	color: #db0536;
-	border-bottom: 3px solid #35363c;
-	outline: none;
-	padding: 19px 150px 16px 15px;
-	font-weight: 600;
-}
-.button{
-	background-color: rgba(0, 0, 0, 0.24);
+.checkbox{
+	width: 23px;
+    height: 23px;
+    border: solid 1px #35363c;
+    background-color: rgba(0, 0, 0, 0.24);
 }
 
-.eviction{
-	margin: 0 0 0 9px;
+.buttonText{
+    font-size: 18px;
+    line-height: 1.76;
+    color: #db0536;
+    outline: none;
+    padding: 10px 48px 8px 15px;
+    font-weight: 600;
+    margin: 3px 0px 0 1px;
+    border: 1px solid #35363c;
+    border-radius: 3px;
 }
-.arrow{
-	margin: 0 0 0 9px;
+
+.buttonText1{
+	padding: 13px 54px 14px 15px;
 }
 
 .buttonText1::after{
@@ -105,40 +156,58 @@
 	display: inline-block;
 	color: #35363c;
 }
-.checkbox{
-	width: 23px;
-    height: 23px;
-    border: solid 1px #35363c;
-    background-color: rgba(0, 0, 0, 0.24);
+
+.button{
+	background-color: rgba(0, 0, 0, 0.24);
 }
+
+.eviction{
+	margin: 0 0 0 7px;
+}
+
+.arrow{
+	margin: 0px 0 0 29px;
+	display: flex;
+}
+
+.arrow1{
+	margin: 0px 0 0 10px;
+}
+
 .svgFly{
 	width: 19px;
     height: 18px;
+    margin: 4px 0px -6px 9px;
 }
+
 .flight{
 	font-size: 16px;
 	line-height: 1.76;
 	color: #35363c;
 	font-weight: 400;
+	margin: 0 0 0 20px;
 }
+
 .fly{
 	display: flex;
     align-items: center;
     justify-content: center;
-    margin: 47px 0 0 0;
+    margin: 41px 0 0 -24px;
+    position: relative;
 }
+
 .buttonSearch{
 	font-size: 18px;
-	line-height: 1.76;
-	text-align: center;
-	color: #ffffff;
-	border-radius: 30.5px;
+    */: ;
+    color: #ffffff;
+    border-radius: 30.5px;
     background-color: #db0536;
-    padding: 23px 72px 26px 72px;
+    padding: 19px 56px 21px 73px;
     display: flex;
     justify-content: center;
-    font-weight: 400;
-    margin: 39px auto;
+    margin: 36px auto;
+    outline: none;
+    letter-spacing: 0.9px;
 }
 
 .buttonSearch:hover{
@@ -149,20 +218,88 @@
 
 .total{
 	display: flex;
-	justify-content: center;
-	font-size: 14px;
-	line-height: 2.26;
-	color: #1e1f26;
-	font-weight: 400;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 2.26;
+    color: #1e1f26;
+    font-weight: 400;
+    margin: -5px 0px 0px 6px;
+    padding: 0 0 28px 0;
 }
+
+.total1{
+	margin: 0 0 0 0;
+}
+
 .night{
-	margin: 0 4px 0 17px;
+	margin: 0px 4px 0 16px;
 }
 
 .adults{
-	margin: 0 3px 0 11px;
+	margin: 0 3px 0 3px;
+}
+
+.svg1{
+	margin: 7px 0px 0px 0px;
+	}
+
+.svg2{
+	margin: 2px 0 0 0;
+}
+
+.svg3{
+	margin: 8px 0 0 0;
 }
 
 .children{
-	margin: 0 2px 0 16px;
+	margin: 0 5px 0 16px;
+}
+
+.option{
+	background-color: black;
+}
+
+input[type="checkbox"]:checked, 
+input[type="checkbox"]:not(:checked){
+    position: absolute;
+    left: -9999px;
+}
+
+input[type="checkbox"]:checked + label, 
+input[type="checkbox"]:not(:checked) + label{
+    display: inline-block;
+    position: relative;
+    padding-left: 26px;
+    line-height: 19px;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label:before, 
+input[type="checkbox"]:not(:checked) + label:before{
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 21px;
+    height: 21px;
+    border: 1px solid #35363c;
+}
+
+input[type="checkbox"]:checked + label:after, 
+input[type="checkbox"]:not(:checked) + label:after{
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    width: 11px;
+    height: 11px;
+    background-image: url(images/rectangle-5-copy-2.png);
+}
+
+input[type="checkbox"]:not(:checked) + label:after{
+    opacity: 0;
+}
+
+input[type="checkbox"]:checked + label:after{
+    opacity: 1;
 }
