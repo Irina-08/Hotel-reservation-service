@@ -197,9 +197,6 @@
 }
 
 .buttonSearch{
-	font-size: 18px;
-    */: ;
-    color: #ffffff;
     border-radius: 30.5px;
     background-color: #db0536;
     padding: 19px 56px 21px 73px;
@@ -207,8 +204,15 @@
     justify-content: center;
     margin: 36px auto;
     outline: none;
-    letter-spacing: 0.9px;
+    
 }
+.link{
+	font-size: 18px;
+	color: #ffffff;
+	letter-spacing: 0.9px;
+	text-decoration: none;
+}
+
 
 .buttonSearch:hover{
 	cursor: pointer;
