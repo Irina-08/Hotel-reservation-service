@@ -290,6 +290,7 @@
 	transition: 2s;
 }
 
+/* начало стилизации checkbox*/
 input[type="checkbox"]:checked, 
 input[type="checkbox"]:not(:checked){
     position: absolute;
@@ -334,14 +335,17 @@ input[type="checkbox"]:not(:checked) + label:after{
 input[type="checkbox"]:checked + label:after{
     opacity: 1;
 }
+/* конец стилизации checkbox*/
+
+/* начало стилизации выпадающего списка*/
 .nameInputPerson {
-	font-family: ProximaNova;
 	font-size: 14px;
 	line-height: 2.26;
 	color: #1e1f26;
 	width: 105px;
 	margin-right: 10px;
 }
+
 .nameInputPerson_adult {
 	margin-left: 42px;
 }
@@ -353,12 +357,12 @@ input[type="checkbox"]:checked + label:after{
 	width:105px;
 	height:50px;
 	margin-top: 5px;
-	font-family: ProximaNova;
 	font-size: 18px;
 	font-weight: 700;
 	margin: 3px 0 0 0;
 }
-.number {
+
+.number { /* стилизация лейблов*/
 	color: #ffffff;	
 	padding-left: 15px;
 	min-height:50px;
@@ -367,7 +371,7 @@ input[type="checkbox"]:checked + label:after{
 	align-items:center;
 	background:  #1e1f26;
 	border: solid 1px #35363c;
-	position:absolute;
+	position:absolute; /* все лейблы накладываются друг на друга*/ 
 	top:0;
 	width: 100%;
 	pointer-events:none;
@@ -378,25 +382,32 @@ input[type="checkbox"]:checked + label:after{
 	overflow:hidden;
 	white-space:nowrap;  
 }
-.number:hover {
+
+.number:hover { /* стилизация выпадающего списка при наведении мыши (состоянии hover) */
 	background: #2d2e37;
 }
-.select:focus .number {
+
+.select:focus .number { /* отображение вариантов инпутов при нажатии на селект (в состоянии focus), 
+	у селекта должен быть указан атрибут tabindex="1" */
 	position:relative;
 	pointer-events:all;
 }
-.select__number {
-	opacity:0;
+
+.select__number { /* стилизация инпутов*/
+	opacity:0; /* делает инпут не видимый глазу*/ 
 	position:absolute;
-	left:-99999px;
+	left:-99999px; /* убирает инпут за пределы экрана в лево*/
 }
-.select__number:checked + .number {
+
+.select__number:checked + .number { /* стилизация для выбранного инпута (select__number:checked)
+     и его лейбла (.number)*/
 	order: 1;
-	z-index:2;
+	z-index:2; /* для отображения только выбронного значения*/
 	background: #ffffff;
 	position:relative;
 	color: #db0536;
 }
+
 .select__number:checked + .number:after {
 	content:'';
 	width: 17px;
@@ -409,3 +420,4 @@ input[type="checkbox"]:checked + label:after{
 	z-index:3;
 	background-size: contain;
 }
+/* конец стилизации выпадающего списка*/
