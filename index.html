@@ -3,6 +3,7 @@
 <head>
 	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="styles-calendar.css">
 </head>
 <body>
 	<div class="container">
@@ -20,8 +21,75 @@
 			<img class="svg" src="images/magnifier.svg">
 			<div class="date">
 				<div class="check">
-					<label class="label">Выберите дату вселения</label>
+					<label class="label" tabindex="1">Выберите дату вселения</label>
 					<input type="text" value="23 января, 2017" class="buttonText">
+
+
+					<table class="calendar" >
+						<caption class="hat">Январь</caption>
+						<thead class="week" >
+							<tr>
+								<th>пн</th>
+								<th>вт</th>
+								<th>ср</th>
+								<th>чт</th>
+								<th>пт</th>
+								<th>сб</th>
+								<th>вс</th>
+							</tr>
+						</thead>
+						<tbody class="days" >
+							<tr>
+								<td class="numeral"> <a href="" class="linkCalendar">1</a></td>
+								<td class="numeral"> <a href="" class="linkCalendar">2</a></td>
+								<td class="numeral"> <a href="" class="linkCalendar">3</a></td>
+								<td class="numeral"> <a href="" class="linkCalendar">4</a></td>
+								<td class="numeral"> <a href="" class="linkCalendar">5</a></td>
+								<td class="numeral"> <a href="" class="linkCalendar">6</a></td>
+								<td class="numeral"> <a href="" class="linkCalendar">7</a></td>
+							</tr>
+							<tr>
+								<td class="numeral"> <a href="" class="linkCalendar">8</a></td>
+								<td class="numeral"> <a href="" class="linkCalendar">9</a></td>
+								<td class="numeral"> <a href="" class="linkCalendar">10</a></td>
+								<td class="numeral"> <a href="" class="linkCalendar">11</a></td>
+								<td class="numeral"> <a href="" class="linkCalendar">12</a></td>
+								<td class="numeral"> <a href="" class="linkCalendar">13</a></td>
+								<td class="numeral"> <a href="" class="linkCalendar">14</a></td>
+							</tr>
+							<tr>
+								<td class="numeral"> <a href="" class="linkCalendar">15</a></td>
+								<td class="numeral"> <a href="" class="linkCalendar">16</a></td>
+								<td class="numeral"> <a href="" class="linkCalendar">17</a></td>
+								<td class="numeral"> <a href="" class="linkCalendar">18</a></td>
+								<td class="numeral"> <a href="" class="linkCalendar">19</a></td>
+								<td class="numeral"> <a href="" class="linkCalendar">20</a></td>
+								<td class="numeral"> <a href="" class="linkCalendar">21</a></td>
+							</tr>
+							<tr>
+								<td class="numeral"> <a href="" class="linkCalendar">22</a></td>
+								<td class="numeral"> <a href="" class="linkCalendar">23</a></td>
+								<td class="numeral"> <a href="" class="linkCalendar">24</a></td>
+								<td class="numeral"> <a href="" class="linkCalendar">25</a></td>
+								<td class="numeral"> <a href="" class="linkCalendar">26</a></td>
+								<td class="numeral"> <a href="" class="linkCalendar">27</a></td>
+								<td class="numeral"> <a href="" class="linkCalendar">28</a></td>
+							</tr>
+							<tr>
+								<td class="numeral"> <a href="" class="linkCalendar">29</a></td>
+								<td class="numeral"> <a href="" class="linkCalendar">30</a></td>
+								<td class="numeral"> <a href="" class="linkCalendar">31</a></td>
+								<td class="numeralOff"> <a href="" class="linkCalendarOff">1</a></td>
+								<td class="numeralOff"> <a href="" class="linkCalendarOff">2</a></td>
+								<td class="numeralOff"> <a href="" class="linkCalendarOff">3</a></td>
+								<td class="numeralOff"> <a href="" class="linkCalendarOff">4</a></td>
+							</tr>
+												
+						</tbody>
+					</table>
+
+
+
 				</div>
 				<div class="eviction">
 					<label class="label">Выберите дату отъезда</label>
