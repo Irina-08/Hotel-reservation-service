@@ -1,65 +1,99 @@
 .calendar{
-	display: none;
-	/*opacity: 0;*/
+    display: table;
+    border-collapse: collapse;
+    position: absolute;
+    opacity: 0;
+}
+
+.check{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    outline: none;
+}
+
+.check:focus .calendar{
+    position: relative;
+    opacity: 1;   
 }
 
 .hat{
 	background-color: #1e1f26;
-	width: 301px;
-    font-family: ProximaNova;
+    width: 303px;
+    font-family: ProximaNova, sans-serif;
     font-size: 18px;
-    line-height: 3.41;
+    line-height: 2.41;
     letter-spacing: -0.36px;
     text-align: center;
     color: #ffffff;
-    font-weight: 400px;
+    margin: 6px 0 0 0;
 }
+
 .week{
 	background-color: #1e1f26;
-	font-family: ProximaNova;
+    font-family: ProximaNova, sans-serif;
     font-size: 12px;
     font-weight: 700;
-    line-height: 5;
+    line-height: 2;
     letter-spacing: -0.24px;
     text-align: center;
     color: #ffffff;
 }
+
 .days{
 	width: 301px;
-    border: solid 1px #adadad;
-    /* background-image: linear-gradient(to top, #000000, #ffffff), linear-gradient(to bottom, #ffffff, #ffffff); */
 }
+
 .numeral{
 	text-align: center;
-	
+	border: 1px solid #adadad;
 }
-.hat::after{
-	content: '';
-	background-image: url(images/arrow1.svg);
-	width: 11px;
-    height: 17px;
-    background-color: #ffffff;
+
+.numeral:hover{
+    background: #db0536;
+    color: #fefefe;
 }
+
 .hat::before{
+    display: inline-block;
+    content: '';
+    background-image: url(images/arrow1.svg);
+    width: 11px;
+    height: 17px;
+    position: absolute;
+    left: 8px;
+    top: 7%;
+}
+
+.hat::after{
+    display: inline-block;
 	content: '';
 	background-image: url(images/arrow-copy2.svg);
 	width: 11px;
     height: 17px;
-    background-color: #ffffff;
+    position: absolute;
+    right: 8px;
+    top: 7%;
 }
+
 .linkCalendar{
 	text-decoration: none;
-    font-family: ProximaNova;
+    font-family: ProximaNova, sans-serif;
     font-size: 16px;
     font-weight: 400;
-    line-height: 3;
+    line-height: 2.5;
     letter-spacing: -1.32px;
     text-align: center;
     color: #2e2e2e;
 }
+
+.numeral:hover .linkCalendar{
+    color: #fefefe;
+}
+
 .linkCalendarOff{
 	text-decoration: none;
-	font-family: ProximaNova;
+	font-family: ProximaNova, sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 3;
@@ -67,18 +101,7 @@
     text-align: center;
     color: #adadad;
 }
-.numeralOff{
-	text-align: center;
+
+table{
+    border-collapse: collapse;
 }
-
-/*.buttonText:focus .calendar{ 
-	position:relative;
-	pointer-events:all;
-	opacity: 1;
-}*/
-.label:hover.calendar{
-	display: table;
-
-}
-
-/*продолжить на : скрыть календарь и что бы он появлялся при нажатии на дату*/;
