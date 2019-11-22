@@ -1,32 +1,36 @@
 .calendar{
     display: table;
-    border-collapse: collapse;
     position: absolute;
     opacity: 0;
+    left:-99999px;
 }
-
-.check{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    outline: none;
+.calendar2{
+    display: table;
+    position: absolute;
+    opacity: 0;
+    left:-99999px;
 }
 
 .check:focus .calendar{
-    position: relative;
-    opacity: 1;   
+    opacity: 1;
+    left:98px;   
+}
+
+.eviction:focus .calendar2{
+    opacity: 1;
+    left:408px;   
 }
 
 .hat{
 	background-color: #1e1f26;
-    width: 303px;
+    width: 301px;
     font-family: ProximaNova, sans-serif;
     font-size: 18px;
-    line-height: 2.41;
+    line-height: 2.5;
     letter-spacing: -0.36px;
     text-align: center;
     color: #ffffff;
-    margin: 6px 0 0 0;
+    margin: 7px 0 0 0;
 }
 
 .week{
@@ -34,19 +38,28 @@
     font-family: ProximaNova, sans-serif;
     font-size: 12px;
     font-weight: 700;
-    line-height: 2;
+    line-height: 2.1;
     letter-spacing: -0.24px;
     text-align: center;
     color: #ffffff;
+    text-transform: uppercase;
 }
 
 .days{
 	width: 301px;
+    background-color: white;
 }
 
 .numeral{
 	text-align: center;
 	border: 1px solid #adadad;
+    box-sizing:border-box;
+    cursor: pointer;
+}
+.numeralOff{
+    text-align: center;
+    border: 1px solid #adadad;
+    box-sizing:border-box;
 }
 
 .numeral:hover{
@@ -61,19 +74,21 @@
     width: 11px;
     height: 17px;
     position: absolute;
-    left: 8px;
+    left: 12px;
     top: 7%;
+    cursor: pointer;
 }
 
 .hat::after{
     display: inline-block;
-	content: '';
-	background-image: url(images/arrow-copy2.svg);
-	width: 11px;
+    content: '';
+    background-image: url(images/arrow-copy2.svg);
+    width: 11px;
     height: 17px;
     position: absolute;
-    right: 8px;
+    right: 10px;
     top: 7%;
+    cursor: pointer;
 }
 
 .linkCalendar{
@@ -96,10 +111,11 @@
 	font-family: ProximaNova, sans-serif;
     font-size: 16px;
     font-weight: 400;
-    line-height: 3;
+    line-height: 2.5;
     letter-spacing: -0.32px;
     text-align: center;
     color: #adadad;
+    cursor: default;
 }
 
 table{

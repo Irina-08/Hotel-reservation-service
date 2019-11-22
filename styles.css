@@ -128,6 +128,7 @@
 
 .check{
 	display: block;
+	outline: none;
 }
 
 .checkbox{
@@ -149,6 +150,7 @@
     border-radius: 3px;
     width: 301px;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 .buttonText1{
@@ -179,6 +181,7 @@
 
 .eviction{
 	margin: 0 0 0 7px;
+	outline: none;
 }
 
 .arrow{
@@ -362,6 +365,7 @@ input[type="checkbox"]:checked + label:after{
 	font-weight: 700;
 	margin: 3px 0 0 0;
 	outline: none;
+	cursor: pointer;
 }
 
 .number { /* стилизация лейблов*/
